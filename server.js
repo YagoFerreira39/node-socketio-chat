@@ -14,7 +14,7 @@ io.on('connection', (socket) => {
   // Welcome current user
   socket.emit('message', 'Welcome to Chatcord')
 
-  // Broadcat when a user connects
+  // Broadcast when a user connects
   socket.broadcast.emit('message', 'A user has joined the chat')
 
   // Run when client disconnects
